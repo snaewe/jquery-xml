@@ -3,6 +3,7 @@
 <head>
    <title>jquery reads xml</title>
    <meta charset="UTF-8">
+   <link href="media.css" media="screen" rel="stylesheet" type="text/css">
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 
    <script type="text/javascript">
@@ -35,7 +36,8 @@
         // unformatiert...nur zum zeigen!
         // append = inhalt/string dem kontainer anhängen
         $("#mediaContainer").append(
-           "<h3>"+title+"</h3><p>"+id+" # "+description+" # "+genre+"</p>");
+           "<div id=\"media\"><h3>"
+           +title+"</h3><p>"+id+" # "+description+" # "+genre+"</p></div>");
         });
 
      });
